@@ -1,6 +1,15 @@
 package main
 
 import (
+	cmd "github.com/litmuschaos/go-util/cmd"
+	//"github.com/spf13/cobra/cobra/cmd"
+)
+
+func main() {
+	cmd.Execute()
+}
+
+/*import (
 	"context"
 	"fmt"
 	//"github.com/litmuschaos/go-util/internal/grpc"
@@ -9,9 +18,11 @@ import (
 	"google.golang.org/grpc"
 	//"log"
 	//"net"
+	//"github.com/spf13/cobra"
 )
 
 func main() {
+	//cobra.OnInitialize(initConfig)
 	serverAddress := "localhost:7000"
 	conn, e := grpc.Dial(serverAddress, grpc.WithInsecure())
 
@@ -33,3 +44,4 @@ func main() {
 		fmt.Println("========================================")
 	}
 }
+*/
